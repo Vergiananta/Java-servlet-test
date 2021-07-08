@@ -1,0 +1,69 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+          version="2.4">
+
+<!--    <servlet>-->
+<!--        <servlet-name>Main</servlet-name>-->
+<!--        <servlet-class>com.enigma.Main</servlet-class>-->
+<!--    </servlet>-->
+
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>Main</servlet-name>-->
+<!--        <url-pattern>/student.ok</url-pattern>-->
+<!--    </servlet-mapping>-->
+    
+    <servlet>
+        <servlet-name>MainSubject</servlet-name>
+        <servlet-class>com.enigma.MainSubject</servlet-class>
+    </servlet>
+   <servlet-mapping>
+       <servlet-name>MainSubject</servlet-name>
+       <url-pattern>/subject.ok</url-pattern>
+   </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MainPlus</servlet-name>
+        <servlet-class>com.enigma.MainPlus</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainPlus</servlet-name>
+        <url-pattern>/add.ok</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentServlet</servlet-name>
+        <servlet-class>com.enigma.StudentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentServlet</servlet-name>
+        <url-pattern>/students.ok</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteStudent</servlet-name>
+        <servlet-class>com.enigma.DeleteStudent</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteStudent</servlet-name>
+        <url-pattern>/delete.ok</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>MajorServlet</servlet-name>
+        <servlet-class>com.enigma.Major.MajorServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>MajorServlet</servlet-name>
+        <url-pattern>/major.ok</url-pattern>
+    </servlet-mapping>
+</web-app>
+
+
